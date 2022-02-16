@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1774323416969695035}
   - component: {fileID: 7383370246682760361}
   m_Layer: 0
-  m_Name: Floor (77)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 3325921033463862998}
   - component: {fileID: 3960821547842381306}
   m_Layer: 0
-  m_Name: Floor (79)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 5002827249801346313}
   - component: {fileID: 1218432925767056392}
   m_Layer: 0
-  m_Name: Floor (69)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 8564052223053036}
   - component: {fileID: 7361136626668003178}
   m_Layer: 0
-  m_Name: Floor (36)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 8744403774561803472}
   - component: {fileID: 5092906280123130263}
   m_Layer: 0
-  m_Name: Floor (75)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 136147206019759322}
   - component: {fileID: 1229310927937513998}
   m_Layer: 0
-  m_Name: Floor (78)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 3414854622105170026}
   - component: {fileID: 5122601474430332140}
   m_Layer: 0
-  m_Name: Floor (56)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,6 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862332501669806913}
+  - component: {fileID: 1797361198435462320}
   m_Layer: 0
   m_Name: Map ring
   m_TagString: Untagged
@@ -714,6 +715,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797361198435462320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4720284615659514530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55953cf0db2e8ea4d804f4038aea32e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tiles:
+  - {fileID: 2010187722640626609}
+  - {fileID: 4333443254933987434}
+  - {fileID: 8513490576841309852}
+  - {fileID: 1933108165948853476}
+  - {fileID: 8313399908795039676}
+  - {fileID: 8047927290788298869}
+  - {fileID: 4906600103207598265}
+  - {fileID: 3953999474488251278}
+  - {fileID: 7966499094778007658}
+  - {fileID: 95894423367144861}
+  - {fileID: 4287792506238994381}
+  - {fileID: 454347452721055846}
+  deleteAmount: 2
 --- !u!1 &4906600103207598265
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +754,7 @@ GameObject:
   - component: {fileID: 1086361084570624772}
   - component: {fileID: 4002801933715955759}
   m_Layer: 0
-  m_Name: Floor (74)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,7 +850,7 @@ GameObject:
   - component: {fileID: 2017552183828429341}
   - component: {fileID: 46114917367342348}
   m_Layer: 0
-  m_Name: Floor (76)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +946,7 @@ GameObject:
   - component: {fileID: 9131795449611206209}
   - component: {fileID: 6683739064639304376}
   m_Layer: 0
-  m_Name: Floor (73)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,7 +1042,7 @@ GameObject:
   - component: {fileID: 8772425538708534391}
   - component: {fileID: 1344655265564231447}
   m_Layer: 0
-  m_Name: Floor (72)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1111,7 +1138,7 @@ GameObject:
   - component: {fileID: 1171575970369050515}
   - component: {fileID: 931871035922508235}
   m_Layer: 0
-  m_Name: Floor (63)
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
