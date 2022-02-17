@@ -7,6 +7,7 @@ public class TileFlying : MonoBehaviour
     Vector3 oldPos;
     bool move;
     float speed;
+    private Vector3 velocity = Vector3.zero;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +20,14 @@ public class TileFlying : MonoBehaviour
         if (move)
         { 
         
-         transform.position = Vector3.Lerp(transform.position, oldPos, speed * Time.deltaTime);
+         transform.position = Vector3.MoveTowards(transform.position, oldPos, speed * Time.deltaTime );
 
         }
     }
     void SpawnTile()
     {
         oldPos = transform.position;
-        speed = Random.RandomRange(1, 5);
+        speed = Random.RandomRange(30, 40);
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50);
         move = true;
     }
