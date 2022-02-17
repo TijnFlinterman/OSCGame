@@ -17,7 +17,8 @@ public class TileSpawner : MonoBehaviour
             if (i == 0)
             {
                 SpawnTile(0);
-
+                SpawnTile(0);
+                SpawnTile(0);
             }
             else
                 SpawnTile(Random.Range(1, tilePrefabs.Length));
