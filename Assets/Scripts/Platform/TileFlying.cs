@@ -27,7 +27,7 @@ public class TileFlying : MonoBehaviour
     void SpawnTile()
     {
         oldPos = transform.position;
-        speed = Random.RandomRange(30, 40);
+        speed = Random.RandomRange(40, 50);
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50);
         move = true;
     }
