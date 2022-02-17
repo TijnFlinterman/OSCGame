@@ -17,7 +17,7 @@ public class ObsticalGen : MonoBehaviour
         else
         {
             deleteAmount = Random.RandomRange(3, diffeculty);
-        
+        }
         for (int i = 0; i < deleteAmount; i++)
         {
             deleteTile();
