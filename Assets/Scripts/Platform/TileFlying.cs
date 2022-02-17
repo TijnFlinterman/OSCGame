@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TileFlying : MonoBehaviour
 {
+    Vector3 currentScale;
     Vector3 oldPos;
     bool move;
     float speed;
@@ -11,7 +12,10 @@ public class TileFlying : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentScale = new Vector3(0.3231175f, 1.9279f, 0.6332867f);
         SpawnTile();
+        transform.localScale = new Vector3(0, 0, 0);
+        LeanTween.scale(this.gameObject, currentScale, 0.5f);
     }
 
     // Update is called once per frame
