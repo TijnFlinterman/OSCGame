@@ -824,7 +824,7 @@ MonoBehaviour:
   - {fileID: 95894423367144861}
   - {fileID: 4287792506238994381}
   - {fileID: 454347452721055846}
-  deleteAmount: 2
+  diffeculty: 5
 --- !u!1 &4906600103207598265
 GameObject:
   m_ObjectHideFlags: 0

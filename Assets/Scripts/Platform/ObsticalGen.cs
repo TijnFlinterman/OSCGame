@@ -5,17 +5,25 @@ using UnityEngine;
 public class ObsticalGen : MonoBehaviour
 {
   [SerializeField]  GameObject[] Tiles;
-    int diffeculty;
-   [SerializeField] int deleteAmount;
+   [SerializeField] int diffeculty;
+    int deleteAmount;
     // Start is called before the first frame update
     void Start()
     {
+        if (diffeculty < 4)
+        {
+            deleteAmount = Random.RandomRange(1, diffeculty);
+        }
+        else
+        {
+            deleteAmount = Random.RandomRange(3, diffeculty);
+        
         for (int i = 0; i < deleteAmount; i++)
         {
             deleteTile();
         }
     }
-
+    
     // Update is called once per frame
     void Update()
     {
