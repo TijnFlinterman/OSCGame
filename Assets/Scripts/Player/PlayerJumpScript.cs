@@ -11,9 +11,9 @@ public class PlayerJumpScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
+      //  if (Input.GetKey(KeyCode.Space))
+        //{
             
-        }
+        //}
     }
 }
