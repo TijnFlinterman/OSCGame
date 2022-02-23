@@ -766,6 +766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6862332501669806913}
   - component: {fileID: 1797361198435462320}
+  - component: {fileID: -4935309781586734845}
   m_Layer: 6
   m_Name: Map ring
   m_TagString: Untagged
@@ -825,6 +826,18 @@ MonoBehaviour:
   - {fileID: 4287792506238994381}
   - {fileID: 454347452721055846}
   diffeculty: 5
+--- !u!114 &-4935309781586734845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4720284615659514530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1291b2e366504bcda331e4bec9598c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4906600103207598265
 GameObject:
   m_ObjectHideFlags: 0

@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inPort: 80
-  outIP: 192.168.137.127
+  outIP: 192.168.137.1
   outPort: 80
 --- !u!4 &803122898
 Transform:
@@ -478,9 +478,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  movementSpeed: 10.1
+  movementSpeed: 10
   gravity: -20
-  jumpHeight: 2.86
+  jumpHeight: 3
   characterController: {fileID: 1731609004}
 --- !u!136 &1731608999
 CapsuleCollider:
