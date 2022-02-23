@@ -207,6 +207,9 @@ MonoBehaviour:
   inPort: 80
   outIP: 192.168.137.1
   outPort: 80
+  ReaderRunning: 0
+  buffer: []
+  paused: 0
 --- !u!4 &803122898
 Transform:
   m_ObjectHideFlags: 0
@@ -439,6 +442,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!1001 &1646941546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713051, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713052, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_Name
+      value: ZigSimDataManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713052, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713053, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: portNumber
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847247931413713053, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
+      propertyPath: dontDestroyOnLoad
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97ccfea1371f345409e3a5fdbf065e03, type: 3}
 --- !u!1 &1731608997
 GameObject:
   m_ObjectHideFlags: 0
