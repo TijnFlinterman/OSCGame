@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class TileFlying : MonoBehaviour
 {
+    GameObject TileMap;
     Vector3 currentScale;
     Vector3 oldPos;
+   [SerializeField] GameObject loc;
     bool move;
     float speed;
     private Vector3 velocity = Vector3.zero;
     // Start is called before the first frame update
     void Start()
     {
-        currentScale = new Vector3(0.3231175f, 1.9279f, 0.6332867f);
+        TileMap = GameObject.FindGameObjectWithTag("TileMap");
+        currentScale = new Vector3(1f, 1f, 1f);
         SpawnTile();
         transform.localScale = new Vector3(0, 0, 0);
         LeanTween.scale(this.gameObject, currentScale, 0.5f);
@@ -24,15 +27,23 @@ public class TileFlying : MonoBehaviour
         if (move)
         { 
         
-         transform.position = Vector3.MoveTowards(transform.position, oldPos, speed * Time.deltaTime );
-
+         transform.position = Vector3.MoveTowards(transform.position, loc.transform.position, speed * Time.deltaTime );
+           
+            
+            float a;
+            a = Vector3.Distance(transform.position, loc.transform.position);
+           if (a <= 0)
+           {
+               move = false;
+            
+            }
         }
     }
     void SpawnTile()
     {
-        oldPos = transform.position;
+       // oldPos = transform.position;
         speed = Random.RandomRange(40, 50);
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50);
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50 );
         move = true;
     }
 }

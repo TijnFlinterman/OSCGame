@@ -5,11 +5,13 @@ using UnityEngine;
 public class TileSpawner : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
+    public GameObject tileMap;
     public float zSpawn = 0;
     public float tileLength = 30;
     public int numberOfTiles = 5;
     public Transform playerTransform;
     public List<GameObject> TilesList = new List<GameObject>();
+    GameObject go;
     void Start()
     {
         for (int i = 0; i < numberOfTiles; i++)
@@ -31,6 +33,7 @@ public class TileSpawner : MonoBehaviour
     }
     void Update()
     {
+     
         if (playerTransform.position.z > zSpawn - (numberOfTiles * tileLength))
         {
             SpawnTile(Random.Range(1, tilePrefabs.Length));
@@ -46,8 +49,12 @@ public class TileSpawner : MonoBehaviour
 
     public void SpawnTile(int tileIndex)
     {
-        GameObject go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, tileMap.transform.rotation);
+        go.transform.parent = tileMap.transform;
+        go.transform.position = new Vector3(0, 5, zSpawn);
+
         zSpawn += tileLength;
         TilesList.Add(go);
     }
 }
+  
