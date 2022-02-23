@@ -155,6 +155,7 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 2705576357555931690, guid: b64f0f6bea37a5f458d910c67d297408, type: 3}
   - {fileID: 4720284615659514530, guid: 76dfacc6c4437c74da06b5d540451548, type: 3}
+  tileMap: {fileID: 226557190}
   zSpawn: 0
   tileLength: 6.6
   numberOfTiles: 4
@@ -185,7 +186,7 @@ GameObject:
   - component: {fileID: 226557191}
   m_Layer: 0
   m_Name: TileMap
-  m_TagString: Untagged
+  m_TagString: TileMap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226557190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9172344, y: 9.030662, z: 11.097575}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -234,9 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1da2043077ffb14cb6a8eca79fef518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inPort: 80
-  outIP: 192.168.137.127
-  outPort: 80
 --- !u!4 &803122898
 Transform:
   m_ObjectHideFlags: 0
@@ -263,7 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fe6bf1fc01aff4ab9ff6b52a07a9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 803122897}
 --- !u!1 &1023830465
 GameObject:
   m_ObjectHideFlags: 0
