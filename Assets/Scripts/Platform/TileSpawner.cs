@@ -50,9 +50,9 @@ public class TileSpawner : MonoBehaviour
     public void SpawnTile(int tileIndex)
     {
         go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, tileMap.transform.rotation);
+        go.transform.position = new Vector3(0, 0, zSpawn);
         go.transform.parent = tileMap.transform;
-        go.transform.position = new Vector3(0, 5, zSpawn);
-
+      
         zSpawn += tileLength;
         TilesList.Add(go);
     }
