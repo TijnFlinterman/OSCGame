@@ -28,12 +28,10 @@ public class PlayerJumpScript : MonoBehaviour
 
     public void OnJump()
     {
-        Debug.Log("Space was pressed");
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, groundMask);
     
         if (isGrounded == true)
         {
-            Debug.Log("isGrounded == true");
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
