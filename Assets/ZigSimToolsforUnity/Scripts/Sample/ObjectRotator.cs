@@ -11,9 +11,7 @@ public class ObjectRotator : MonoBehaviour
         ZigSimDataManager.Instance.StartReceiving ();
         ZigSimDataManager.Instance.QuaternionCallBack += (ZigSimTools.Quaternion q) =>
         {
-            // Debug.Log (q.ToString ());
-            var newQut = new Quaternion ((float) - q.x, (float) - q.z, (float) - q.y, (float) q.w);
-            var newRot = newQut * Quaternion.Euler (90f, 0, 0);
+            Quaternion newRot = Quaternion.Euler (0, 0, (float)q.z * 180);
             targetRotation = newRot;
         };
     }
@@ -21,10 +19,5 @@ public class ObjectRotator : MonoBehaviour
     void Update ()
     {
         transform.localRotation = targetRotation;
-
-        if (Input.GetKeyDown (KeyCode.Escape))
-        {
-            ZigSimDataManager.Instance.StopReceiving ();
-        }
     }
 }

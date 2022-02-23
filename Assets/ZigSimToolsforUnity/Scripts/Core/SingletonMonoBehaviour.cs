@@ -23,7 +23,7 @@ namespace ZigSimTools
                     instance = (T) FindObjectOfType (t);
                     if (instance == null)
                     {
-                        Debug.LogError ($"There is no game object with {t} attached in the scene.");
+                        //Debug.LogError ($"There is no game object with {t} attached in the scene.");
                     }
                 }
 
