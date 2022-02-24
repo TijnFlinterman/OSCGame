@@ -7,9 +7,10 @@ public class Gamemanager : MonoBehaviour
     public static Gamemanager main;
     TileSpawner tilespawner;
     public int diffcultyAmount;
-    GameObject Player;
+   public  GameObject Player;
     Vector3 beginPos;
     float nextDif = 100;
+    float dis;
     private void Awake()
     {
 
@@ -32,11 +33,19 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float dis = Vector3.Distance(beginPos, Player.transform.position);
+        dis = Vector3.Distance(beginPos, Player.transform.position);
+     
+      
+    }
+    private void FixedUpdate()
+    {
         if (dis >= nextDif)
         {
-            nextDif = nextDif + 100;
-            diffcultyAmount++;
+            nextDif = nextDif + 200;
+            if (diffcultyAmount < 12)
+            {
+                diffcultyAmount++;
+            }
         }
     }
 }

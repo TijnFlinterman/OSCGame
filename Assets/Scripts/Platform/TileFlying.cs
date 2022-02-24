@@ -7,6 +7,7 @@ public class TileFlying : MonoBehaviour
     GameObject TileMap;
     Vector3 currentScale;
     Vector3 oldPos;
+    Renderer render;
    [SerializeField] GameObject loc;
     bool move;
     float speed;
@@ -14,6 +15,8 @@ public class TileFlying : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        render = gameObject.GetComponent<Renderer>();
+      
         TileMap = GameObject.FindGameObjectWithTag("TileMap");
         currentScale = new Vector3(1f, 1f, 1f);
         SpawnTile();
@@ -24,6 +27,17 @@ public class TileFlying : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int ran = Random.RandomRange(1, 100);
+        if (ran < 50)
+        {
+            render.material.SetColor("_BaseMap", Color.blue);
+
+        }
+        if (ran > 50)
+        {
+            render.material.SetColor("_BaseMap", Color.red);
+
+        }
         if (move)
         { 
         
