@@ -326,6 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diffcultyAmount: 0
+  Player: {fileID: 1731608997}
 --- !u!4 &1054560008
 Transform:
   m_ObjectHideFlags: 0

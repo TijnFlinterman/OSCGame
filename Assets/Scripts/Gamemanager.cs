@@ -11,6 +11,7 @@ public class Gamemanager : MonoBehaviour
     Vector3 beginPos;
     float nextDif = 100;
     float dis;
+
     private void Awake()
     {
 
@@ -34,8 +35,8 @@ public class Gamemanager : MonoBehaviour
     void Update()
     {
         dis = Vector3.Distance(beginPos, Player.transform.position);
-     
-      
+       
+
     }
     private void FixedUpdate()
     {
