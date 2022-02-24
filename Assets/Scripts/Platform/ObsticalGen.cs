@@ -10,6 +10,7 @@ public class ObsticalGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        diffeculty = Gamemanager.main.diffcultyAmount;
         if (diffeculty < 4)
         {
             deleteAmount = Random.RandomRange(1, diffeculty);

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FlyingTrigger
   - TileMap
+  - tilespawner
   layers:
   - Default
   - TransparentFX
