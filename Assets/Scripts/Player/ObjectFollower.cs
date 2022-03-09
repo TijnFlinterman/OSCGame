@@ -9,6 +9,6 @@ public class ObjectFollower : MonoBehaviour
 
     void Update()
     {
-        transform.position = objectToFollow.position;
+        transform.position = new Vector3(transform.position.x, transform.position.y, objectToFollow.position.z + 200);
     }
 }
