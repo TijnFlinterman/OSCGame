@@ -14,6 +14,7 @@ public class ObjectRotator : MonoBehaviour
         {
             Quaternion newRot = Quaternion.Euler (0, 0, (float)q.z * 360);
             targetRotation = newRot;
+
         };
     }
 

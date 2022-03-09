@@ -25,9 +25,8 @@ public class PlayerJumpScript : MonoBehaviour
         ZigSimDataManager.Instance.TouchCallBack += (ZigSimTools.Touch[] touches) =>
         {
             int count = 0;
-            foreach (var t in touches)
+            foreach (ZigSimTools.Touch t in touches)
             {
-                Debug.Log($"{count} : {t.ToString()}");
                 OnJump();
                 count++;
             }

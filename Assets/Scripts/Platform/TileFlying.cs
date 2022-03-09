@@ -77,14 +77,14 @@ public class TileFlying : MonoBehaviour
     void SpawnTile()
     {
        // oldPos = transform.position;
-        speed = Random.RandomRange(40, 50);
+        speed = Random.Range(40, 50);
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50 );
         move = true;
     }
     void ranColor()
     {
     
-        int ran = Random.RandomRange(1, 100);
+        int ran = Random.Range(1, 100);
         if (ran < 50)
         {
             render.material.SetColor("_BaseColor", white);
