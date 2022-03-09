@@ -12,7 +12,7 @@ public class ObjectRotator : MonoBehaviour
         ZigSimDataManager.Instance.StartReceiving ();
         ZigSimDataManager.Instance.GravityCallBack += (Gravity q) =>
         {
-            Quaternion newRot = Quaternion.Euler (0, 0, (float)q.z * 360);
+            Quaternion newRot = Quaternion.Euler (0, 0, (float)q.y * 360);
             targetRotation = newRot;
         };
     }
