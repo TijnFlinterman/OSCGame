@@ -669,14 +669,6 @@ MonoBehaviour:
     m_ActionId: 6c0b7c24-9389-4821-a3df-d0cc989099ae
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9c65c506-524d-4910-9e58-a204f3da0481
-    m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4c98c95b-f06f-4cb9-b227-b626a8c1fb56
-    m_ActionName: Player/Fire[/Mouse/leftButton]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1731608998}
         m_TargetAssemblyTypeName: PlayerJumpScript, Assembly-CSharp
@@ -733,7 +725,7 @@ MonoBehaviour:
     m_ActionId: 802f03b5-a25a-417f-b876-3d2b96b55ce8
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultControlScheme: Touch
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

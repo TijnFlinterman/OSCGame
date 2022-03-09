@@ -173,7 +173,7 @@ namespace ZigSimTools
     /// </summary>
     [Serializable]
     public class Quaternion
-    {
+    {  
         public double x;
         public double y;
         public double z;

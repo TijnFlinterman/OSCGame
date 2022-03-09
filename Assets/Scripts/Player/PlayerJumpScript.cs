@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
+using ZigSimTools;
+using Touch = UnityEngine.Touch;
 
 public class PlayerJumpScript : MonoBehaviour
 {
@@ -16,6 +18,21 @@ public class PlayerJumpScript : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+
+    void Start()
+    {
+        ZigSimDataManager.Instance.StartReceiving();
+        ZigSimDataManager.Instance.TouchCallBack += (ZigSimTools.Touch[] touches) =>
+        {
+            int count = 0;
+            foreach (var t in touches)
+            {
+                Debug.Log($"{count} : {t.ToString()}");
+                OnJump();
+                count++;
+            }
+        };
+    }
 
     private void Update()
     {

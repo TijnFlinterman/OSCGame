@@ -13,11 +13,11 @@ public class ObsticalGen : MonoBehaviour
         diffeculty = Gamemanager.main.diffcultyAmount;
         if (diffeculty < 4)
         {
-            deleteAmount = Random.RandomRange(1, diffeculty);
+            deleteAmount = Random.Range(1, diffeculty);
         }
         else
         {
-            deleteAmount = Random.RandomRange(3, diffeculty);
+            deleteAmount = Random.Range(3, diffeculty);
         }
         for (int i = 0; i < deleteAmount; i++)
         {
@@ -32,7 +32,7 @@ public class ObsticalGen : MonoBehaviour
     }
     void deleteTile()
     {
-        Destroy(Tiles[Random.RandomRange(0, Tiles.Length)]);
+        Destroy(Tiles[Random.Range(0, Tiles.Length)]);
 
     }
 }
