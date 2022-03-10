@@ -81,20 +81,20 @@ public class TileFlying : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 50 );
         move = true;
     }
-    void ranColor()
-    {
+    //void ranColor()
+    //{
     
-        int ran = Random.Range(1, 100);
-        if (ran < 50)
-        {
-            render.material.SetColor("_BaseColor", white);
+    //    int ran = Random.Range(1, 100);
+    //    if (ran < 50)
+    //    {
+    //        render.material.SetColor("_BaseColor", white);
 
-        }
-        if (ran > 50)
-        {
-            render.material.SetColor("_BaseColor", Color.white);
+    //    }
+    //    if (ran > 50)
+    //    {
+    //        render.material.SetColor("_BaseColor", Color.white);
 
-        }
+    //    }
 
-    }
+    //}
 }

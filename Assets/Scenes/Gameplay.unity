@@ -353,6 +353,8 @@ GameObject:
   - component: {fileID: 1366349702}
   - component: {fileID: 1366349701}
   - component: {fileID: 1366349700}
+  - component: {fileID: 1366349704}
+  - component: {fileID: 1366349705}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -438,6 +440,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1366349704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366349699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299bf4dd903e14d47b0b8ad3f4f44fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereMaterial: {fileID: 2100000, guid: 07e1824d451dd5744b82f2f1a5106225, type: 2}
+  lerpTime: 1
+  myColors:
+  - {r: 0, g: 14.870588, b: 16, a: 1}
+  - {r: 0, g: 0.5019608, b: 16, a: 0}
+  - {r: 0, g: 16, b: 0, a: 0}
+  - {r: 16, g: 0.00000047683716, b: 0, a: 0}
+--- !u!114 &1366349705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366349699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1291b2e366504bcda331e4bec9598c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1563806889
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +603,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  movementSpeed: 10.1
-  gravity: -20
+  movementSpeed: 20
+  gravity: 0
   jumpHeight: 2.86
   characterController: {fileID: 1731609004}
 --- !u!136 &1731608999

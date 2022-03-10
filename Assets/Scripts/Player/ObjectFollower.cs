@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectFollower : MonoBehaviour
 {
+    private Quaternion targetRotation;
     public Transform objectToFollow;
     public float offset;
 
