@@ -603,8 +603,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  movementSpeed: 20
-  gravity: 0
+  movementSpeed: 10
+  gravity: -20
   jumpHeight: 2.86
   characterController: {fileID: 1731609004}
 --- !u!136 &1731608999
@@ -852,8 +852,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0, g: 0.38052797, b: 1, a: 1}
-  m_Intensity: 288260.4
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 120000
   m_Range: 196
   m_SpotAngle: 18.755676
   m_InnerSpotAngle: 0
